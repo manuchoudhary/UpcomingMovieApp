@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Upcoming Movies</string>
+    <string name="label_loading">Please Wait…</string>
+</resources>

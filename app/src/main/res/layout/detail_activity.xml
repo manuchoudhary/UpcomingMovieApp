@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/feed_bg"
+    android:backgroundTint="@color/feed_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ss.com.bannerslider.views.BannerSlider
+                android:id="@+id/imageSlider"
+                app:interval="4000"
+                app:loopSlides="true"
+                app:defaultIndicators="circle"
+                app:emptyView="@layout/layout_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/overview"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feed_item_margin"
+            android:layout_marginRight="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:background="@drawable/bg_parent_rounded_corner"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <RatingBar
+                android:id="@+id/stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:max="5"
+                android:isIndicator="true"
+                android:stepSize="0.1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
